@@ -1,0 +1,83 @@
+@media(max-width:991px){
+    .com-about{
+        width: 100%;
+    }
+    .pdt-img, .fet-img{
+        height: 250px;
+    }
+    
+}
+@media (max-width:700px){
+    .the-style{
+        flex-direction: column;
+        text-align: center;
+    }
+   .com-link{
+        width: 50%;
+        margin-bottom: 10px;
+    } 
+    .copyright{
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-pdt button{
+    padding:8px 10px;
+    width: calc(40px + 2vw);
+    }
+    .feature-pdt h2{
+        padding-right: 10px;
+    }
+    
+}
+@media(max-width: 500px) {
+    .container{
+        margin: 0 30px;
+    }
+    .head-right {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .btm-conts{
+        flex-direction: column;
+        align-items: center;
+        margin-top:50%;
+    }
+    .top-cards{
+        display: none;
+    }
+    .btm-text{
+        color: #fff;
+    }
+    .btm-cards{
+        width: 100%;
+        height: 200px;
+        margin: 30px 0 20px;
+        justify-content: center;
+    }
+    .cr{
+        display: none;
+    }
+    
+    .card{
+        width: 100%;
+    }
+    .card:nth-child(1){
+        margin-bottom: 25px;
+    }
+    .pdt-card, .fet-card{
+        width: 100%;
+        padding: 0 20px;
+
+    }
+    .pdt-img, .fet-img{
+        height: 250px;
+        padding: 20px 15%;
+    }
+}

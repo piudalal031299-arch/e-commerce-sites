@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jewelry Empire</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid">
+
+        <div class="header-top px-3 ">
+            <div class="tel">
+                <p><a href="tel:800543776">(800) 5437576</a></p>
+            </div>
+            <div class="search d-flex align-items-center justify-content-between">
+                <input type="text" placeholder="Search for products, brands and more">
+                <span class="material-symbols-outlined align-middle">search</span>
+            </div>
+            <div class="social-icon d-flex gap-2">
+                <img src="images/insta.png" alt="..">
+                <img src="images/fb.png" alt="..">
+                <img src="images/tweet.png" alt="..">
+            </div>
+        </div>
+        <div class="header-btm">
+            <h1>
+                <span class="heading-fl">J</span>EWELRY <span><img src="images/logo.png" alt=""></span>
+                <span class="heading-fl">E</span>MPIRE
+            </h1>
+            <div class="mobile-menu " data-bs-toggle="offcanvas" data-bs-target="#mobile-nav">
+                <span class="material-symbols-outlined">dehaze</span>
+            </div>
+        </div>
+        <nav>
+            <ul class=" nav-ul d-flex justify-content-between px-5">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GALERY</a></li>
+                <li><a href="#">INFO</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">STORE LOCATION</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">LOGIN</a></li>
+
+            </ul>
+        </nav>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="mobile-nav" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header bg-dark">
+                <h5 class="offcanvas-title" id="offcanvasLabel"><img src="images/logo.png" alt="">
+                </h5>
+                <button type="button" class="btn-close bg-white fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-warning">
+                <ul class="nav flex-column nav-ul">
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">GALERY</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">INFO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">EVENTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">STORE LOCATION</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">LOGIN</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div class=" banner-sec carousel slide" data-bs-ride="carousel" id="slider1">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="banner-cont">
+                        <div class="banner-cont-col d-flex justify-content-center align-items-center ">
+                            <img src="images/banner4.png" class=" img-fluid" alt="...">
+                        </div>
+                        <div class="banner-cont-col">
+                            <h2>NEW COLLECTION <span>"DIAMOND"</span></h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis iusto. Vel
+                                praesentium, delectus suscipit impedit molestias facilis quia autem maiores ex rerum
+                                similique quidem quod excepturi at cupiditate asperiores.</P>
+                            <a href="#" class="primary-btn">FIND OUT MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item ">
+                    <div class="banner-cont">
+                        <div class="banner-cont-col d-flex justify-content-center align-items-center ">
+                            <img src="images/banner2.png" class=" img-fluid" alt="...">
+                        </div>
+                        <div class="banner-cont-col">
+                            <h2>NEW COLLECTION <span>"DIAMOND"</span></h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis iusto. Vel
+                                praesentium, delectus suscipit impedit molestias facilis quia autem maiores ex rerum
+                                similique quidem quod excepturi at cupiditate asperiores.</P>
+                            <a href="#" class="primary-btn">FIND OUT MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item ">
+                    <div class="banner-cont">
+                        <div class="banner-cont-col d-flex justify-content-center align-items-center ">
+                            <img src="images/banner3.png" class=" img-fluid" alt="...">
+                        </div>
+                        <div class="banner-cont-col ">
+                            <h2>NEW COLLECTION <span>"DIAMOND"</span></h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis iusto. Vel
+                                praesentium, delectus suscipit impedit molestias facilis quia autem maiores ex rerum
+                                similique quidem quod excepturi at cupiditate asperiores.</P>
+                            <a href="#" class="primary-btn">FIND OUT MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <div class="common-container">
+            <div class="card1-sec py-5">
+                <div class="row rounded card1-bg ">
+                    <div class=" col-md-5 card1-img">
+                        <img src="images/breslet.png" class="img-fluid" alt=" diamond ring">
+                    </div>
+                    <div class=" col-md-7 d-flex align-items-center ">
+                        <div class="card-body card1-body"> ">
+                            <h5 class="card-title">GOLD & <br> BRACELETS</h5>
+                            <p class="card-text">This is a wider card with supporting below as a natural lead-in to
+                                additional content</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded card1-bg ">
+                    <div class=" col-md-5 card1-img">
+                        <img src="images/ring.png" class="img-fluid" alt=" diamond ring">
+                    </div>
+                    <div class=" col-md-7 d-flex align-items-center">
+                        <div class="card-body card1-body">
+                            <h5 class="card-title">GOLD &<br> DIAMONDRING</h5>
+                            <p class="card-text">This is a wider card with supporting below as a naturl lead-in to
+                                additional content</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded card1-bg ">
+                    <div class=" col-md-5 card1-img">
+                        <img src="images/neck.png" class="img-fluid" alt=" diamond ring">
+                    </div>
+                    <div class=" col-md-7 d-flex align-items-center">
+                        <div class="card-body card1-body">
+                            <h5 class="card-title">GOLD & <br> NECKLACE</h5>
+                            <p class="card-text">This is a wider card with supporting below as a natural lead-in to
+                                additional content</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-pdt-sec ">
+                <div class=" sec-heading">
+                    <h2>Top Products</h2>
+                    <div><a href="#">Get Similar products <span class="material-symbols-outlined align-middle">
+                                trending_flat</span></a>
+                    </div>
+                </div>
+                <div class="top-pdt-card">
+                    <div class="pdt-card-cont">
+                        <div class="pdt-img"><img src="images/card1.png" class=" " alt="..."></div>
+                        <p>Earring Necklace Jewelery chain Jemstone</p>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <div class="pricing">Rs 120000</div>
+                            <div class="rating">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdt-card-cont">
+                        <div class="pdt-img"><img src="images/card2.png" class="" alt="..."></div>
+                        <p>Earring Necklace Jewelery chain Jemstone</p>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <div class="pricing">Rs 120000</div>
+                            <div class="rating">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdt-card-cont">
+                        <div class="pdt-img"><img src="images/card3.png" class="" alt="..."></div>
+                        <p>Earring Necklace Jewelery chain Jemstone</p>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <div class="pricing">Rs 120000</div>
+                            <div class="rating">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdt-card-cont">
+                        <div class="pdt-img"><img src="images/card4.png" class="" alt="..."></div>
+                        <p>Earring Necklace Jewelery chain Jemstone</p>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <div class="pricing">Rs 120000</div>
+                            <div class="rating">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                                <img src="images/material-symbols_star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="counter-sec1">
+                <div class="counter-left">
+                    <img src="images/toppng 1.png" alt="earring">
+                </div>
+                <div class="counter-middle">
+                    <h3>Silver-Diamonds Earrings</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci a, ipsum quo soluta porro
+                        debitis accusamus ex vel labore omnis voluptatum odio quia aliquid molestiae iste consectetur
+                        aliquam nam culpa!</p>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="counter-right">
+                    <img src="images/women.png" alt="woman">
+                </div>
+            </div>
+            <div class="new-pdt-sec py-5">
+                <div class=" sec-heading">
+                    <h2>New Products</h2>
+                    <div><a href="#">Get Similar products <span class="material-symbols-outlined align-middle">
+                                trending_flat</span></a>
+                    </div>
+                </div>
+                <div class="new-pdt-card">
+
+                    <div class="card-area">
+                        <div class="pdt-card-cont">
+                            <div class="pdt-img"><img src="images/new1.png" class="" alt="..."></div>
+                            <p>Earring Necklace Jewelery chain Jemstone</p>
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <div class="pricing">Rs 120000</div>
+                                <div class="rating">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-area">
+                        <div class="pdt-card-cont">
+                            <div class="pdt-img"><img src="images/new2.png" class="" alt="..."></div>
+                            <p>Earring Necklace Jewelery chain Jemstone</p>
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <div class="pricing">Rs 120000</div>
+                                <div class="rating">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-area">
+                        <div class="pdt-card-cont">
+                            <div class="pdt-img"><img src="images/new3.png" class="" alt="..."></div>
+                            <p>Earring Necklace Jewelery chain Jemstone</p>
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <div class="pricing">Rs 120000</div>
+                                <div class="rating">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-area">
+                        <div class="pdt-card-cont">
+                            <div class="pdt-img"><img src="images/new4.png" class="" alt="..."></div>
+                            <p>Earring Necklace Jewelery chain Jemstone</p>
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <div class="pricing">Rs 120000</div>
+                                <div class="rating">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                    <img src="images/material-symbols_star.png" alt="star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="shop-by-category py-5">
+                <div class="shop-by-category-heading">
+                    <h2>Shop By Category</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dolorum!</p>
+                </div>
+                <div class="shop-by-category-card text-center">
+                    <div class="card">
+                        <img src="images/cate1.png" alt="" class="img-fluid ">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Earring</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate2.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Gold Earring</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate3.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Wedding Ring</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate4.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Gold Necklace</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right
+
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate5.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Breslet</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate6.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Neckwear</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate7.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Diamond necklace</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate8.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Gold Coin</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate9.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Earring</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/cate10.png" alt="abc" class="img-fluid">
+                        <div class="card-body category-card-body">
+                            <p class="card-text">Nosepin</p>
+                            <a href="#">Explore
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="shop-by-gender py-5">
+                <div class="shop-by-category-heading">
+                    <h2>Shop By Gender</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dolorum!</p>
+                </div>
+                <div class="shop-by-category-card">
+                    <div class="card">
+                        <img src="images/wmen.png" alt="" class="img-fluid ">
+                        <div class="card-body category-card-body body-flex">
+                            <p class="card-text">Women</p>
+                            <a href="#">Explore More
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/men.png" alt="" class="img-fluid ">
+                        <div class="card-body category-card-body body-flex">
+                            <p class="card-text">Men</p>
+                            <a href="#">Explore More
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/kid.png" alt="" class="img-fluid ">
+                        <div class="card-body category-card-body body-flex">
+                            <p class="card-text">kids</p>
+                            <a href="#">Explore More
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter2">
+            <div class="counter2-col">
+                <img src="images/counter2.png" alt="bangle">
+                <h2>MAKE A GIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias eum architecto perspiciatis
+                    similique soluta, unde velit expedita reprehenderit voluptatibus.</p>
+            </div>
+            <div class="counter2-col">
+                <h2>OUR STORE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nam provident nesciunt alias. Nam
+                    sed architecto earum ullam, suscipit esse obcaecati laborum numquam aliquid natus perferendis eos
+                    accusamus laudantium voluptatum.</p>
+                <a href="#" class="primary-btn">Find Out More</a>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="footer-top common-container">
+            <div class="footer-col">
+                <div class="footer-cont">
+                    <ul>
+                        <li class="footer-heading">Useful Links</li>
+                        <li class="footer-cont-a"><a href="#">About</a></li>
+                        <li class="footer-cont-a"><a href="#">Contact us</a></li>
+                        <li class="footer-cont-a"><a href="#">Support</a></li>
+                        <li class="footer-cont-a"><a href="#">Careers</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-cont">
+                    <ul>
+                        <li class="footer-heading">Informations</li>
+                        <li class="footer-cont-a"><a href="#">Career</a></li>
+                        <li class="footer-cont-a"><a href="#">Blogs</a></li>
+                        <li class="footer-cont-a"><a href="#">FAQ</a></li>
+                        <li class="footer-cont-a"><a href="#">Other Details</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-cont">
+                    <ul>
+                        <li class="footer-heading">Contact Us</li>
+                        <li class="footer-cont-a"><img src="images/msg.png" alt="">
+                            <a href="mailto:jem@gmail.com">Mail to us</a>
+                        </li>
+                        <li class="footer-cont-a"><img src="images/Vector (1).png" alt="">
+                            <a href="tel:8348357656">8348357656</a>
+                        </li>
+                        <li class="footer-cont-a"><img src="images/Vector.png" alt="">
+                            <a href="#">Chat with us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer-cont">
+                    <ul>
+                        <li class="footer-heading">Download The App</li>
+                        <div class="playstore"><img src="images/playstore.png" alt=""></div>
+                        <div class="socialicon-img pt-3">
+                            <img src="images/fb.png" alt="Instagram">
+                            <img src="images/insta.png" alt="twitter">
+                            <img src="images/tweet.png" alt="linkedin">
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-btm ">
+            <p>Copyright @ 2024 Jewelry Empire. All rights reserved.</p>
+            <p>terms and conditions | privacy policy</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
