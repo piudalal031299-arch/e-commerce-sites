@@ -21,7 +21,7 @@ loginForm.innerHTML = `
                         <form action="post">
                             <input type="text"  required placeholder="User Name" class="input-field">
                             <input type="email" required placeholder="Enter Email" class="input-field">
-                            <input type="password" required placeholder="Enter Password" class="input-field">
+                            <input type="password" id="password" required placeholder="Enter Password" class="input-field">
                             <button class="login-btn">Login</button>
                         </form>    
                     `;
@@ -37,7 +37,10 @@ close.addEventListener("click",()=>{
 loginForm.classList.remove("show-modal");
 });
 
-// form valid
+// form validation
+
+
+
 
 
 
