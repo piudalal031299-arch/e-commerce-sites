@@ -47,7 +47,7 @@
     .btm-conts{
         flex-direction: column;
         align-items: center;
-        margin-top:50%;
+        margin-top:180px
     }
     .top-cards{
         display: none;
