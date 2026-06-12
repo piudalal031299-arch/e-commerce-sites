@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@theme{
+  --breakpoint-sm: 550px;
+  --breakpoint-md: 850px;
+}
+
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 calc(20px + 7vw);
+}
+img{
+    width: 100%;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --primary-bg: #0B0F14;
+    --secondary-bg: #122634;
+    --card-bg: #0F1A22;
+    --border-color:#1E2933;
+    --text-color: #E6EEF3;
+    --para-color: #98A8B3;
+    --btn-bg: #0EA5E9;
+    --btn-txt: #001219;
+}
+p{
+    color: var(--para-color);
+}
+h2,h3{
+    color: var(--text-color);
+}
+.hero-heading h2{
+ font-size: calc(1.5rem + 2.5vw);
+    padding: 20px 0;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.hero-heading p{
+    color: var(--para-color);
+    font-size: calc(.5rem + .7vw);
+    margin-bottom: 30px;
+}
+.sec-heading span,.hero-heading span{
+    background-color: var(--btn-bg);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: calc(.5rem + .5vw);
+    padding: 5px 15px;
+
+}
+.sec-heading h2{
+    font-size: calc(1.2rem + 2vw);
+    padding: 20px 0;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.sec-heading p{
+    color: var(--para-color);
+    font-size: calc(.5rem + .6vw);
+    margin-bottom: 60px;
+}
+.primary-btn{
+    background-color: var(--btn-bg);
+    color: var(--btn-txt);
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.second-btn{
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--btn-bg);
+}
+.mobile-menu{
+    padding: 7px;
+}
+.card{
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 40px;
+    color: var(--text-color);
+    text-align: left;
+}
+.card span{
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: calc(1rem + .5vw);
+    padding: 18px;
+    color: var(--btn-bg);
+}
+.card h3{
+    font-size: calc(.5rem + .8vw);
+    margin: 15px 0;
+    font-weight: 600;
+}
+.card p{
+    color: var(--para-color);
+    font-size: calc(.5rem + .5vw);
+}
+.pricing button{
+    color: var(--btn-txt);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+
+
+}
+.icon{
+     background-color: var(--secondary-bg);
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: calc(1rem + .5vw);
+    padding: 8px 12px;
+    color: var(--text-color);
+}
+@media (max-width: 768px){
+    .card{
+        padding: 20px;
+    }
+}
