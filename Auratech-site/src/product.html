@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="output.css">
+    <title>Auratech-product</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center text-3xl bg-[var(--secondary-bg)] pt-6">PRODUCTS</h2>
+    <div class="cardCont flex flex-wrap bg-[var(--secondary-bg)] justify-between p-8 gap-y-8">
+    </div>
+    <script>
+        let cardCont = document.querySelector(".cardCont");
+
+        async function getData() {
+            try {
+                const resp = await fetch("https://dummyjson.com/products/category/smartphones");
+                const apiData = await resp.json();
+                return apiData.products;
+            } catch (err) {
+                console.log("Error", err);
+            }
+        }
+
+        getData().then((apiData) => {
+            apiData.forEach((val) => {
+                let card = document.createElement("div");
+                card.setAttribute("class", "card");
+                card.className =
+                    "w-full sm:w-[46%] md:w-[23%] overflow-hidden bg-[var(--card-bg)] text-left pb-5 rounded-lg border border-[var(--border-color)]";
+                cardCont.appendChild(card);
+
+                card.innerHTML = `
+                    <div><img src="${val.thumbnail}" alt=""></div>
+                    <h3 class="pb-5 px-5 text-xl text-center text-[var(--text-color)] leading-tight">${val.title}</h3>
+                    <p class="my-3 text-center px-5 text-[var(--para-color)]">${val.brand}</p>
+                    <div class="pricing text-xl flex justify-between px-5 text-[var(--text-color)]">
+                        <h3>$ ${val.price} </h3>
+                        <button class="bg-[var(--btn-bg)] w-10 h-10 rounded-md flex items-center justify-center hover:opacity-90 transition">
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    `;
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -33,6 +33,9 @@ p{
 h2,h3{
     color: var(--text-color);
 }
+nav ul li:hover,nav ul li:focus{
+    color: var(--btn-bg);
+}
 .hero-heading h2{
  font-size: calc(1.5rem + 2.5vw);
     padding: 20px 0;
@@ -71,12 +74,21 @@ h2,h3{
     padding: 8px 16px;
     border-radius: 5px;
 }
+.primary-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--btn-bg);
+    color: var(--text-color);
+}
 .second-btn{
     background-color: transparent;
     color: var(--text-color);
     padding: 8px 16px;
     border-radius: 5px;
     border: 1px solid var(--btn-bg);
+}
+.secondary-btn:hover{
+    background-color: var(--btn-bg);
+    color: var(--btn-txt);
 }
 .mobile-menu{
     padding: 7px;
