@@ -481,11 +481,11 @@ footer {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 10;
+	z-index: 1;
 }
 
 .booking-form {
-	width: 340px;
+	width: 100%;
 	background: #000000c4;
 	color: #fff;
 	padding: 25px;
