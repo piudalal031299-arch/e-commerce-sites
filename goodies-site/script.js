@@ -1,7 +1,7 @@
 
 // -----Set the offer end date and time-----------//
 
-const offerEnd = new Date("2026-07-27T23:59:59").getTime();
+const offerEnd = new Date("2026-07-30T23:59:59").getTime();
 
 const timer = setInterval(() => {
     const now = new Date().getTime();
@@ -105,7 +105,7 @@ hamburger.addEventListener("click", () => {
 
         // Auto Slider
         
-        setInterval(() => {
+       let autoSlide = setInterval(() => {
             let maxIndex = cards.length - visibleCards();
             if (index < maxIndex) {
                 index++;
@@ -114,7 +114,28 @@ hamburger.addEventListener("click", () => {
             }
             moveSlider();
         }, 2000);
+        const slider = document.querySelector(".slider");
+       
+        slider.addEventListener("mouseenter", () => {
+    clearInterval(autoSlide);
+});
+
+// Resume slider
+slider.addEventListener("mouseleave", () => {
+     clearInterval(autoSlide);
     
+    autoSlide = setInterval(() => {
+        let maxIndex = cards.length - visibleCards();
+
+        if (index < maxIndex) {
+            index++;
+        } else {
+            index = 0;
+        }
+
+        moveSlider();
+    }, 2000);
+});
 
 // -----------footer-------------//
 

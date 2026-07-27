@@ -146,7 +146,7 @@ main {
 }
 
 .hero-sec {
-	height: clamp(300px, 80vh, 80vh);
+	height: 80vh;
 	position: relative;
 
 }
@@ -582,6 +582,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 600px) {
+	.hero-sec {
+	height: 300px;
+
+}
 	.hero-btns {
 		flex-direction: column;
 	}
