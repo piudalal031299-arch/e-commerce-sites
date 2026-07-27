@@ -583,7 +583,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 600px) {
 	.hero-sec {
-	height: 300px;
+	height: 350px;
 
 }
 	.hero-btns {
