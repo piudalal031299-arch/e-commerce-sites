@@ -1,7 +1,7 @@
 
 // -----Set the offer end date and time-----------//
 
-const offerEnd = new Date("2026-07-30T23:59:59").getTime();
+const offerEnd = new Date("2026-08-30T23:59:59").getTime();
 
 const timer = setInterval(() => {
     const now = new Date().getTime();
@@ -19,7 +19,7 @@ const timer = setInterval(() => {
     // Offer expired
     if (distance <= 0) {
         clearInterval(timer);
-        document.querySelector(".timer-div").style.display = "none";
+        document.querySelector("#timer").textContent = "OFFER EXPIRED";
     }
 }, 1000);
 
@@ -157,3 +157,44 @@ form.addEventListener("submit", function (e) {
     this.reset();
 
 });
+
+
+
+// gsap-------------------------------------------------------------------------//
+
+
+        // toggleActions: "play reverse play reverse",
+gsap.to("#heroImg",{
+    skewX: 45,
+    y:50,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".flash-card",
+        // markers:true,
+        scroller:"body",
+        start: "top 100%",
+        end:"top 10%",
+        // toggleActions: "play reverse play reverse",
+        scrub:true,
+    }
+
+})
+
+gsap.from(".flash-card",{
+    transform:"translateX(-20%)",
+    opacity: 0,
+    duration: 1.2,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".flash-card",
+        // markers:true,
+        scroller:"body",
+        start: "top 90%",
+        end:"top 10%",
+        // toggleActions: "play reverse play reverse",
+        scrub:true,
+        
+    
+}
+})

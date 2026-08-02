@@ -98,7 +98,7 @@ ul li img {
     height: 100vh;
     z-index: 10;
     display: none;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: -10px;
 }
