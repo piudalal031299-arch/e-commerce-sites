@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body{
+width: 100%;
+max-width: 1300px;
+margin: 0 auto;
+}
+ul,
+li,
+a{
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+--prim-color:rgb(235, 78, 98);
+--background-color:rgb(242, 245, 249);
+--text-color:rgb(0, 0, 0);
+--text-sec-color:#fff;
+}
+.primBtn{
+    background: var(--prim-color);
+    border-radius: 5px;
+    border:none;
+    color: var(--text-sec-color);
+    padding: 5px 8px;
+
+}
+.secBtn{
+    border: 1px solid var(--prim-color);
+    color: var(--prim-color);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+select{
+    border:none;
+    outline:none;
+}
+header{
+    background: var(--background-color);
+
+}
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 8px 5% ;
+
+}
+.headerLeft,.headerRight{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.headerLeft{
+    width: 60%;
+    /* border: 1px solid red; */
+}
+h1{
+    font-size: 15px;
+}
+h1 a img{
+    width: clamp(100px, 15vw, 150px);
+}
+.searchInput{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    width: 90%;
+    padding:  0 15px ;
+    height: 40px;
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% ;
+    border-bottom: 1px solid #ccc;
+}
+nav ul{
+    display: flex;
+    gap: 15px;
+}
+nav ul li a{
+    color: var(--text-color);
+}
+nav ul li:hover a, nav ul li:focus a{
+    color:var(--prim-color);
+}
+.hamburgar{
+    position: relative;
+}
+.mobileNav{
+position: fixed;
+top: 0;
+right: 0;
+width:200px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+height: 100vh;
+transform: translateX(100%);
+background-color: var(--prim-color);
+}
+.mobileNav.show{
+transform: translateX(-100%);
+
+}
+main{
+    background: var(--background-color);
+}
+.hero{
+    padding: 20px 0;
+}
+
+/* hero slider------------------------------------------ */
+   .item{
+    max-height: 400px;
+    width: 90%;
+   }
+        .autoplay img{
+            width:90%;
+            margin:0 auto;
+            height:100%;
+            border-radius:10px;
+        }
+ .slick-prev,
+.slick-next{
+    background:rgba(0,0,0,0.5);  
+}
+
+.slick-prev{
+    left:10px;
+}
+
+.slick-next{
+    right:10px;
+} 
+    /* hero slider end------------------------------------------ */
+
+.recomended{
+    padding: 20px 5% ;
+}    
+.recomendedTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.recomendedTitle div{
+    color: var(--prim-color);
+}
+.recomendedCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.recomendedCard,.premireCard{
+width: 18%;
+}
+.imgDiv{
+    width: 100%;
+    height: 280px;
+}
+.imgDiv1{
+      width: 100%;
+    height: 250px;
+}
+.recomendedCard img, .comingsoonCard img, .premireCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.premier{
+    background: rgb(36, 33, 68);
+    padding: 0 5%;
+
+}
+.playImg{
+    border-bottom: 1px solid #fff;
+}
+.playImg img{
+    width: 100%;
+}
+.premierHeading h3{
+    color: var(--text-sec-color);
+    padding-top: 20px;
+}
+.premierHeading p, .premireCard p{
+    color: var(--text-sec-color);
+    padding-bottom: 20px;
+
+}
+.premireCard h3{
+    color: var(--text-sec-color);
+
+}
+
+/* movies page -------------------------------------------------- */
+.moviesMain{
+    padding: 20px 5%;
+}
+.moviesHero{
+    max-height: 400px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.moviesHero img{
+    width: 100%;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: 220px auto;
+
+}
+.sideber h2, .mainCont h2{
+padding-bottom: 20px;
+}
+/* accordian---------------------------------------------------- */
+.accordian{
+    background: #fff;
+    padding: 15px ;
+    border-radius: 6px;
+    margin: 0 0 15px;
+}
+.accordianTitle{
+    display: flex;
+    justify-content: space-between;
+    color: var(--prim-color);
+    padding-bottom: 10px;
+}
+.accordianOption{
+    /* margin: 15px 0; */
+
+}
+.accordianOption button{
+    border: 1px solid #ccc;
+    color: var(--prim-color);
+    background-color: #FFF;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+}
+.accordianOption button:hover{
+    border: 1px solid var(--prim-color);
+   transition: all .3s ease-in-out;
+}
+
+.mainCont{
+    padding-left: 30px;
+}
+.selectBtn button{
+  border: 1px solid #ccc;
+    color: var(--prim-color);
+    background-color: #FFF;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;  
+}
+.comingsoon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--text-sec-color);
+    margin-top: 20px;
+}
+.comingsoon a{
+    color: var(--prim-color);
+}
+.comingsoonCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+/* footer---------------------------------------------------- */
+footer{
+    padding: 20px 5% ;
+    color: var(--text-sec-color);
+    background-color: #000;
+    position: relative;
+}
+.contactDiv{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:  20px;
+    margin-bottom: 120px;
+}
+.counter{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px  solid #fff;
+    border-bottom: 1px  solid #fff;
+    padding: 20px 5vw;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width:100%;
+}
+.counterCard{
+width:30%;
+text-align: center;
+}
+.counterCard p{
+    font-size: clamp(10px, 1rem, 1.4vw );
+}
+footer h5{
+    font-size: calc(10px + .2vw);
+    color:var(--text-sec-color);
+    padding: 10px 0;
+
+
+}
+footer p a{
+    color:var(--text-sec-color);
+    font-weight: 400;
+    font-size: calc(8px + .2vw);
+
+}
+.footerBtm{
+    text-align: center;
+}
+.footerLogo{
+    position: relative;
+    text-align: center;
+}
+.footerLogo::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: .5px;
+    top: 40%;
+    left: -10%;
+    background-color: #fff;
+}
+.footerLogo::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: .5px;
+    top: 40%;
+    right: -10%;
+    background-color: #fff;
+}
+
+
+
+
+/* form -------------------------------------------------------------------------------*/
+.formDiv{
+            background-color: var(--background-color);
+
+}
+.formDiv h2{
+            text-align: center;
+            color: var(--prim-color);
+            padding-top: 30px;
+        }
+ form{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 20px 0 50px;
+            gap: 20px;
+            width: clamp(280px, 40vw, 600px);
+            
+        }
+        .input-box {
+            position: relative;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--prim-color);
+            outline: none;
+            border-radius: 5px;
+            background: transparent;
+            
+        }
+
+        .input-box label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--background-color);
+            transition: .3s;
+            pointer-events: none;
+            color: var(--text-color);
+
+        }
+        
+        .formButton{
+            background-color:var(--prim-color);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+        }
+        /* Float label */
+        .input-box.active label {
+            top: 0;
+            font-size: 14px;
+            color: var(--prim-color);
+        }
+
+
+@media (max-width: 768px){
+nav{
+    display: none;
+}
+}
+@media (max-width: 475px){
+    
+}
+  
+    
