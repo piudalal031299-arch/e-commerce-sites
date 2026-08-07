@@ -31,6 +31,10 @@ a{
     padding: 5px 8px;
 
 }
+.primBtn a{
+    color: var(--text-sec-color);
+    font-size: calc(10px + .5vw);
+}
 .secBtn{
     border: 1px solid var(--prim-color);
     color: var(--prim-color);
@@ -42,6 +46,7 @@ a{
 select{
     border:none;
     outline:none;
+    font-size: calc(10px + .5vw)
 }
 header{
     background: var(--background-color);
@@ -58,25 +63,25 @@ header{
 .headerLeft,.headerRight{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 .headerLeft{
     width: 60%;
-    /* border: 1px solid red; */
 }
 h1{
     font-size: 15px;
 }
 h1 a img{
-    width: clamp(100px, 15vw, 150px);
+    width: clamp(80px, 15vw, 200px);
+    vertical-align: bottom;
 }
 .searchInput{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     border: 1px solid #ccc;
     width: 90%;
-    padding:  0 15px ;
+    padding:  0 12px ;
     height: 40px;
 }
 input{
@@ -97,28 +102,41 @@ nav ul{
 }
 nav ul li a{
     color: var(--text-color);
+    font-size: calc(12px + .3vw);
 }
 nav ul li:hover a, nav ul li:focus a{
     color:var(--prim-color);
 }
+.mobileMenu{
+    display: none;
+}
 .hamburgar{
     position: relative;
+    justify-items: right;
 }
 .mobileNav{
 position: fixed;
+z-index: 4;
 top: 0;
-right: 0;
-width:200px;
+/* right: 0; */
+width:280px;
 padding: 20px;
 display: flex;
 flex-direction: column;
 row-gap: 10px;
 height: 100vh;
 transform: translateX(100%);
-background-color: var(--prim-color);
+transition: transform .5s ease;
+background-color: var(--text-sec-color);
+}
+.mobileNav li a{
+color: var(--prim-color);
+}
+.mobileNav li:hover{
+ border-bottom: 1px solid var(--prim-color);   
 }
 .mobileNav.show{
-transform: translateX(-100%);
+transform: translateX(-50%);
 
 }
 main{
@@ -155,7 +173,17 @@ main{
 
 .recomended{
     padding: 20px 5% ;
-}    
+} 
+.recomended h2, 
+.comingsoon h3{
+    font-size: calc(16px + .5vw);
+}
+.recomended p a,
+.comingsoon p a{
+    font-size: calc(12px + .5vw);
+    color: var(--prim-color);
+    font-weight: 600;
+}   
 .recomendedTitle{
     display: flex;
     justify-content: space-between;
@@ -166,14 +194,17 @@ main{
     color: var(--prim-color);
 }
 .recomendedCards{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px ,1fr));
+    gap: 25px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin: 20px 0;
 }
-.recomendedCard,.premireCard{
+/* .recomendedCard,.premireCard{
 width: 18%;
-}
+} */
 .imgDiv{
     width: 100%;
     height: 280px;
@@ -186,6 +217,16 @@ width: 18%;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+.recomendedCard h3,
+.comingsoonCard h3{
+    font-size: calc(12px + .5vw);
+
+}
+.recomendedCard p,
+.comingsoonCard p{
+    font-size: calc(10px + .5vw);
+
 }
 .premier{
     background: rgb(36, 33, 68);
@@ -209,7 +250,11 @@ width: 18%;
 }
 .premireCard h3{
     color: var(--text-sec-color);
+    font-size: calc(12px + .5vw);
 
+}
+.premireCard p{
+    font-size: calc(10px + .5vw);
 }
 
 /* movies page -------------------------------------------------- */
@@ -226,11 +271,14 @@ width: 18%;
 }
 .gridContainer{
     display:grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: 200px auto;
 
 }
 .sideber h2, .mainCont h2{
 padding-bottom: 20px;
+    font-size: calc(18px + .5vw);
+
+
 }
 /* accordian---------------------------------------------------- */
 .accordian{
@@ -245,9 +293,15 @@ padding-bottom: 20px;
     color: var(--prim-color);
     padding-bottom: 10px;
 }
+.dynIcon{
+    font-size: 24px;
+}
 .accordianOption{
-    /* margin: 15px 0; */
+    display:none;
 
+}
+.accordianOption.active{
+    display:block;
 }
 .accordianOption button{
     border: 1px solid #ccc;
@@ -282,31 +336,36 @@ padding-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     background: var(--text-sec-color);
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .comingsoon a{
     color: var(--prim-color);
 }
 .comingsoonCards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
 
 /* footer---------------------------------------------------- */
 footer{
-    padding: 20px 5% ;
     color: var(--text-sec-color);
     background-color: #000;
-    position: relative;
+    /* position: relative; */
 }
 .contactDiv{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom:  20px;
-    margin-bottom: 120px;
+    padding: 20px 5% ;
 }
+.contactDiv h3{
+    font-size: calc(10px + .5vw);
+
+}
+
 .counter{
     display: flex;
     justify-content: space-between;
@@ -314,20 +373,24 @@ footer{
     border-bottom: 1px  solid #fff;
     padding: 20px 5vw;
     background-color: rgb(128, 128, 128);
-    position: absolute;
-    top: 70px;
-    left: 0;
     width:100%;
 }
 .counterCard{
 width:30%;
 text-align: center;
 }
+.counterCard span{
+    font-size: calc(20px + 1vw);
+}
 .counterCard p{
-    font-size: clamp(10px, 1rem, 1.4vw );
+    font-size: clamp(8px, 1rem, 1.4vw );
+}
+.footerLinks{
+    padding: 20px 5% ;
+
 }
 footer h5{
-    font-size: calc(10px + .2vw);
+    font-size: calc(10px + .5vw);
     color:var(--text-sec-color);
     padding: 10px 0;
 
@@ -336,15 +399,17 @@ footer h5{
 footer p a{
     color:var(--text-sec-color);
     font-weight: 400;
-    font-size: calc(8px + .2vw);
+    font-size: calc(8px + .4vw);
 
 }
 .footerBtm{
     text-align: center;
+    padding: 20px 5% ;
+    
+
 }
 .footerLogo{
     position: relative;
-    text-align: center;
 }
 .footerLogo::before{
     content: "";
@@ -363,6 +428,10 @@ footer p a{
     top: 40%;
     right: -10%;
     background-color: #fff;
+}
+.copyright{
+    font-size: calc(10px + 1vw);
+
 }
 
 
@@ -433,9 +502,38 @@ footer p a{
 nav{
     display: none;
 }
+.mobileMenu{
+    display: block;
 }
-@media (max-width: 475px){
-    
+.gridContainer{
+    display:grid;
+    grid-template-columns: 150px auto;
+}
+
+}
+@media (max-width: 576px){
+  
+.headerRight button{
+    display: none;
+}
+.contactDiv h3 img {
+    width: 40px;
+}
+.contactDiv button{
+width: 100%;
+margin-top: 20px;
+}
+.sideber{
+    display: none;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: auto auto ;
+
+}
+.sideber{
+    display: none;
+}
 }
   
     

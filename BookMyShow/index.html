@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="style.css">
 
     <title>BookMyShow</title>
+    <style>
+        /* cardSlide--------------------- */
+        .cardSlide{
+            position: absolute;
+            width: 100%;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -31,18 +39,19 @@
                     <option value="Mumbai">Mumbai</option>
                     <option value="Bangalore">Bangalore</option>
                 </select>
-                <button class="primBtn">Signup</button>
-                <div class="hamburgar">
-                    <span class="material-symbols-outlined">menu</span>
+                <button class="primBtn"> <a href="form.html">Signup</a></button>
+
+                <div class="mobileMenu">
+                    <span class="material-symbols-outlined hamburgar">menu</span>
                     <ul class="mobileNav">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="movies.html">Movies</a></li>
                         <li><a href="">Stream</a></li>
-                        <li><a href="">Events</a></li>
+                        <li><a href="events.html">Events</a></li>
                         <li><a href="">Plays</a></li>
                         <li><a href="">Sports</a></li>
                         <li><a href="">Activities</a></li>
                         <li><a href="">ListYourShows</a></li>
-                        <li><a href="form.html" target="_blank">BookAShow</a></li>
                         <li><a href="">Offers</a></li>
                         <li><a href="">Giftcards</a></li>
                     </ul>
@@ -53,14 +62,14 @@
             <ul>
                 <li><a href="movies.html">Movies</a></li>
                 <li><a href="">Stream</a></li>
-                <li><a href="">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="">Plays</a></li>
                 <li><a href="">Sports</a></li>
                 <li><a href="">Activities</a></li>
             </ul>
             <ul>
                 <li><a href="">ListYourShows</a></li>
-                <li><a href="form.html" target="_blank">BookAShow</a></li>
+                <li><a href="">Corporates</a></li>
                 <li><a href="">Offers</a></li>
                 <li><a href="">Giftcards</a></li>
             </ul>
@@ -89,9 +98,46 @@
         <section class="recomended">
             <div class="recomendedTitle">
                 <h2>Recomended Movies</h2>
-                <div>See All ></div>
+                <p><a href="">See All ></a></p>
             </div>
-            <div class="recomendedCards">
+            <div class="recomendedCards cardSlide">
+                <div class="recomendedCard">
+                    <div class="imgDiv">
+                        <img src="image/card1.webp" alt="">
+                    </div>
+                    <h3>Bhai Tere Star Hai</h3>
+                    <p>Comedy/Thriller</p>
+                </div>
+                <div class="recomendedCard">
+                    <div class="imgDiv">
+                        <img src="image/card2.webp" alt="">
+                    </div>
+                    <h3>The Odyssey</h3>
+                    <p>History/Thriller</p>
+                </div>
+                <div class="recomendedCard">
+                    <div class="imgDiv">
+                        <img src="image/card4.webp" alt="">
+                    </div>
+                    <h3>Ardhangini</h3>
+                    <p>Comedy/Family</p>
+                </div>
+                <div class="recomendedCard">
+                    <div class="imgDiv">
+                        <img src="image/card3.webp" alt="">
+                    </div>
+                    <h3>Dhamaal 4</h3>
+                    <p>Comedy/Drama</p>
+                </div>
+                <div class="recomendedCard">
+                    <div class="imgDiv">
+                        <img src="image/card5.webp" alt="">
+                    </div>
+                    <h3>Jan Neta</h3>
+                    <p>Politics/Thriller</p>
+                </div>
+            </div>
+             <div class="recomendedCards cardSlide">
                 <div class="recomendedCard">
                     <div class="imgDiv">
                         <img src="image/card1.webp" alt="">
@@ -175,10 +221,10 @@
 
         </section>
 
-        <section class="recomended liveEvent">
+        <section class="liveEvent recomended">
             <div class="recomendedTitle">
                 <h2>The Best of Live Events</h2>
-                <div>See All ></div>
+                <p><a href="">See All ></a></p>
             </div>
             <div class="recomendedCards">
                 <div class="recomendedCard">
@@ -220,43 +266,48 @@
         </div>
         <div class="counter">
             <div class="counterCard">
-                <span class="material-symbols-outlined" style="font-size: 40px;">person_raised_hand</span>
+                <span class="material-symbols-outlined">person_raised_hand</span>
                 <p>24/7 CUSTOMER CARE</p>
             </div>
             <div class="counterCard">
-                <span class="material-symbols-outlined" style="font-size: 40px;">attach_email</span>
+                <span class="material-symbols-outlined" >attach_email</span>
                 <p>RESEND BOOKING CONFIRMATION</p>
             </div>
             <div class="counterCard">
-                <span class="material-symbols-outlined" style="font-size: 40px;">subscriptions</span>
+                <span class="material-symbols-outlined" >subscriptions</span>
                 <p>SUBSCRIBE TO NEWSLETTER</p>
             </div>
         </div>
-        <h5>MOVIES NOW SHOWING IN KOLKATA</h5>
-        <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
-                Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
-                4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan Neta</a>
-            | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
-        <h5>MOVIES BY LANGUAGES</h5>
-        <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
-                Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
-                4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan Neta</a>
-            | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
-        <h5>MOVIES BY GENRE</h5>
-        <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
-                Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
-                4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan Neta</a>
-            | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
-        <h5>SPORTS EVENT IN KOLKATA</h5>
-        <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Cricket</a> | <a
-                href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Football</a> | <a
-                href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Bowling</a> | <a
-                href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Chess</a></p>
-        <div class="footerBtm">
-            <div class="footerLogo">
-                <img src="image/fullLogo.png" width="20%" alt="">
+        <div class="footerLinks">
+            <h5>MOVIES NOW SHOWING IN KOLKATA</h5>
+            <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
+                    Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
+                    4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan
+                    Neta</a>
+                | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
+            <h5>MOVIES BY LANGUAGES</h5>
+            <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
+                    Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
+                    4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan
+                    Neta</a>
+                | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
+            <h5>MOVIES BY GENRE</h5>
+            <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Spider-Man: Brand New
+                    Day</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Dhamal
+                    4</a> | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Jan
+                    Neta</a>
+                | <a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">The Odissey</a></p>
+            <h5>SPORTS EVENT IN KOLKATA</h5>
+            <p><a href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Cricket</a> | <a
+                    href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Football</a> | <a
+                    href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Bowling</a> | <a
+                    href="/movies/spiderman-brand-new-day-3d/ET00502600" class="sc-7wuoxb-5 iFCevS">Chess</a></p>
+            <div class="footerBtm">
+                <div class="footerLogo">
+                    <img src="image/fullLogo.png" width="20%" alt="">
+                </div>
+                <div class="copyright">BookMyShow 2026 @ Bigtree Entertainment Pvt. Ltd. All Rights Reserved</div>
             </div>
-            <div class="copyright">BookMyShow 2026 @ Bigtree Entertainment Pvt. Ltd. All Rights Reserved</div>
         </div>
 
 
