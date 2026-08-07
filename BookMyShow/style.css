@@ -119,7 +119,8 @@ position: fixed;
 z-index: 4;
 top: 0;
 /* right: 0; */
-width:280px;
+width:50vw;
+min-width: 250px;
 padding: 20px;
 display: flex;
 flex-direction: column;
@@ -129,6 +130,9 @@ transform: translateX(100%);
 transition: transform .5s ease;
 background-color: var(--text-sec-color);
 }
+.mobileReg{
+    padding: 10px 0;
+}
 .mobileNav li a{
 color: var(--prim-color);
 }
@@ -136,7 +140,7 @@ color: var(--prim-color);
  border-bottom: 1px solid var(--prim-color);   
 }
 .mobileNav.show{
-transform: translateX(-50%);
+transform: translateX(-75%);
 
 }
 main{
@@ -513,7 +517,7 @@ nav{
 }
 @media (max-width: 576px){
   
-.headerRight button{
+.signup{
     display: none;
 }
 .contactDiv h3 img {
@@ -526,10 +530,12 @@ margin-top: 20px;
 .sideber{
     display: none;
 }
+.mainCont{
+    padding-left: 0px;
+}
 .gridContainer{
     display:grid;
     grid-template-columns: auto auto ;
-
 }
 .sideber{
     display: none;
