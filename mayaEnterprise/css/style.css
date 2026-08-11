@@ -462,6 +462,12 @@ gap: 20px;
     grid-template-columns: 80px auto;
     align-items: center;
 }
+.location li p a{
+    color: var(--ink);
+}
+.location li p a:hover{
+    color: var(--orange);
+}
 form div{
     display: flex;
     flex-wrap: wrap;
