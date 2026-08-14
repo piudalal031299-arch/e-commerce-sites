@@ -6,6 +6,7 @@ font-family: var(--font-head);
 
 }
 :root{
+    --hero-bg:linear-gradient(180deg, rgba(6, 39, 60, 0.02), rgba(255, 255, 255, 0));
     --bg: #FAFBFC;
     --bg-soft: #F6F8F9;
     --ink: #0F1720;
@@ -40,20 +41,27 @@ h5{
     margin-bottom: 5px;
 }
 p{
-font-size: calc(10px + .5vw); 
+font-size: 14px; 
 
 }
 .container{
-    padding:  40px calc(40px + 1vw);
+   padding:  clamp(20px, 4vw, 48px);
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
 }
 .primBtn{
     padding:12px 15px;
     border: none;
     border-radius: 8px;
     background-color: var(--accent-2);
+    font-size: 15px;
+font-weight: 600px;
 }
 .primBtn a{
     color: #fff;
+     font-size: 15px;
+font-weight: 600px;
 }
 
 .secBtn{
@@ -61,12 +69,14 @@ font-size: calc(10px + .5vw);
     border: 1px solid var(--line-dark);
     border-radius: 8px;
     background-color: transparent; 
+     font-size: 15px;
+font-weight: 600px;
 
 }
 button a{
     color: var(--navy);
     font-weight: 600;
-    font-size: calc(10px + .4vw);
+    font-size: 15px;
     
 
 
@@ -74,13 +84,15 @@ button a{
 /* header------------------------------------------ */
 header{
     position: relative;
+    padding: 0 30px;
+    width: 100%;
+    background:rgba(250, 251, 252, 0.96);
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: var(--bg);
     box-shadow: 0 0 4px var(--muted);
     font-family: var(--font-head);
     position: sticky;
@@ -123,7 +135,7 @@ gap:20px;
     font-size: calc(10px + .5vw);
 }
 .nav ul li a:hover,
-.nav ul li a:focus{
+.nav ul li a:active{
     border-bottom:2px solid var(--orange);
     padding-bottom: 12px;
     cursor: pointer;
@@ -134,7 +146,7 @@ gap:20px;
     background-color: var(--accent);
     padding: 6px 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 .callBtn a{
     color: #fff;
@@ -178,56 +190,74 @@ color: var(--font-head);
 }
 /* index page main---------------------------------------- */
 .card{
-    padding:25px 20px;
+    padding:20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: #fff;
+    box-shadow: 0 10px 22px rgba(11, 49, 66, 0.08);
 }
 .card:hover{
     transform: translateY(-5px);
     transition: all.3s ease-in-out;
 }
 .card h5 {
-    font-size: calc(10px + .3vw) !important;
+    font-size: 14.5px !important;
     font-weight: 700 !important;
     color: var(--ink) !important;
     margin-bottom: 5px !important;
 }
-.card h4{
-    font-size: calc(12px + .5vw);
+.card h4,
+.liFlex h4{
+    font-size: 16px;
+    color: var(--navy);
 
 }
-.card p{
- font-size: calc(12px + .2vw) !important;
+.card p,
+.liFlex p{
+ font-size: 14.5px !important;
     padding: 0  !important;
-    color: var(--ink) !important;
+    color: var(--muted) !important;
+    line-height: 1.5;
 }
 .hero{
+    background:var(--hero-bg);
+}
+.heroGrid{
     display: grid;
     grid-template-columns: auto  45%;
     gap: 20px;
-    background-color: var(--bg-soft);
-
-}
-.hero h5{
+   }
+.orangeTitle{
     color: var(--orange);
-font-size: calc(10px + .3vw);
-margin-bottom: 20px;
+font-size: 13px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+margin-bottom: 15px;
 
 }
 .hero h2{
-font-size: calc(20px + 2vw);
-line-height: 1;
+font-size:clamp(28px, 3.4vw, 44px);
+line-height: 1.1;
+font-family: var(--font-head);
+color:var(--navy);
 margin-bottom: 20px;
 }
 .hero p{
-font-size: calc(10px + .5vw);
+font-size: 16px;
+line-height: 1.4;
+letter-spacing: .04em;
 margin-bottom: 20px;
 color: var(--muted);
 
 }
-.heroBtn{
+.heroBtn,
+.btnFlex{
 margin-bottom: 20px;
+display: flex;
+gap: 15px;
+font-size: 15px;
+font-weight: 600px;
 
 }
 
@@ -243,53 +273,56 @@ margin-bottom: 20px;
 .heroImgCont{
     border-radius: 12px;
     overflow: hidden;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid var(--line);
     text-align: center;
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
+    height: fit-content;
 }
-.heroImg{
-    height: 95%;
+.heroImgCont p{
+    font-size: 14px;
 }
 /* trustedSec-------------------------------------- */
 .secHead{
 color: var(--muted);
+font-size: 13px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+margin-bottom: 15px;
 }
 .secTitle{
-font-size: calc(16px + 1.5vw);
-margin: 10px 0;
+font-size: clamp(24px, 3vw, 34px);
+font-family: var(--font-head);
+color: var(--navy);
 }
 .trustedSec{
     text-align: center;
     border-top: 1px solid var(--line);
-    background-color: var(--bg);
-}
-.trustedSec h5{
-   color: var(--orange);
-font-size: calc(10px + .3vw); 
-text-transform: uppercase;
-padding-bottom: 10px;
+    background-color: var(--bg-soft);
 }
 .trustedSec p{
    color: var(--muted);
-font-size: calc(10px + .5vw); 
+font-size: 14.5px;
+font-family: var(--font); 
+line-height: 1.6;
 }
 .trustedCards{
     display: grid;
-    margin-top: 30px;
-    gap: 15px;
-    color: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+    margin-top: 12px;
+    gap: 12px;
+    padding: 12px;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.trustedCards .card{
+    height: 90px;
 }
 .trustedCards .card img{
-    height: 60px;
-    width: 100px;
      filter: grayscale(100%);
 }
 .trustedCards .card img:hover{
     scale: 1.1;
      filter: grayscale(0%);
-    transition: all.3s ease-in-out;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -302,7 +335,7 @@ font-size: calc(10px + .5vw);
 }
 .whatWeDoCards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 20px 0;
 
@@ -316,33 +349,53 @@ font-size: calc(10px + .5vw);
     width: max-content;
     padding:6px 10px;
     border-radius: 5px;
+    font-size: 14px;
 }
-/* inside the shop sec-------------------------------------- */
+/* inside the shop sec------------&-------workshop page------------------- */
 .insideShop{
     border-top: 1px solid var(--line);
-    background-color: var(--bg);
+    background-color: var(--bg-soft);
 
+}
+.insideShopAll{
+    background-color: var(--bg);
+    border-top: 1px solid var(--line);
 }
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    padding-bottom: 15px;
 }
 .flex button{
     width: fit-content;
+}
+.flex p{
+    font-size: 14.5px;
 }
 .shopCard{
     border: 1px solid var(--line);
     border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 10px 22px rgba(11, 49, 66, 0.08);
 }
 .shopCardCont{
     padding: 15px;
 }
+.shopCardCont h4{
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--navy);
+    line-height: 1.2;
+}
 .orange{
-    color: var(--orange);
+    color: var(--orange-dk);
     text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 .shopCard h4{
     padding: 8px 0;
@@ -351,14 +404,14 @@ font-size: calc(10px + .5vw);
 .shopCard p{
     color: var(--muted);
 }
+.insideShop{
+    background-color: var(--bg-soft);
+}
 .insideShopCards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    /* margin: 20px 0; */
-    background-color: var(--bg-soft);
-
-
+    padding-top: 15px;
 }
 
 /* job runs sec-------------------------------------------- */
@@ -373,13 +426,17 @@ font-size: calc(10px + .5vw);
 .liFlex{
     display: flex;
     gap: 20px;
-    align-items: center;
     padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+
+}
+.liFlex:first-child{
     border-top: 1px solid var(--line);
 
 }
 .numbering{
     padding: 10px 20px;
+    height: fit-content;
     border-radius: 6px;
     font-weight: 600;
     color: #fff;
@@ -387,13 +444,12 @@ font-size: calc(10px + .5vw);
 }
 /* counter sec------------------------------------- */
 .counter{
-    border-top: 1px solid var(--line);
-    background-color: var(--bg);
+    background-color: var(--bg-soft);
 }
 .counterCont{
     background-color: var(--navy);
     border-radius: 12px;
-    padding:40px;
+    padding:3vw;
     color: #fff;
     display: grid;
     align-items: center;
@@ -401,36 +457,37 @@ font-size: calc(10px + .5vw);
     grid-template-columns: 60% 40%;
 }
 .counterCont h2{
-    font-size: calc(22px + .5vw);
+    font-size: clamp(20px, 2.8vw, 28px);
     padding-bottom: 15px;
 
+}
+.counter p{
+    color: #D3E3F5;
+    font-size: clamp(15px, 2vw, 22px);
 }
 .btnCont{
     display: flex;
     justify-content: flex-end;
 gap: 20px;
 }
-.cmnHeading{
-    background: var(--bg-soft);
-    border-bottom: 1px solid var(--line);
 
-}
-.pageName{
-    color: var(--muted) !important;
-    font-size: calc(10px + .3vw) !important;
-}
 /* common part---------------------------------------- */
 
+.cmnHeading{
+    background: var(--bg-soft);
+}
 .cmnHeading h2{
      color: var(--ink);
-    font-size: calc(20px + 1.5vw);
+    font-size: clamp(26px, 4vw, 40px);;
     padding: 15px 0;
 }
 .cmnHeading p{
     color: var(--muted);
     font-size: calc(12px + .5vw);
 }
-/* services page--------------------------------------------- */
+
+/* --------------------services page--------------------------------------------- */
+
 #coreRepair{
      display: grid;
     grid-template-columns: 1fr 1fr;
@@ -445,22 +502,35 @@ gap: 20px;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
-/* contact page--------------------------------------------- */
-.contactSec{
-    background-color: var(--bg-soft);
-}
+
+/* ----------------------------contact page--------------------------------------------- */
 .contactDels{
+    background: var(--bg);
+    border-top: 1px solid var(--line-dark);
+
+}
+.contactGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-
 }
 .location li{
     padding: 20px 0;
     border-bottom: 1px solid var(--line-dark);
     display: grid;
-    grid-template-columns: 80px auto;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
     align-items: center;
+}
+.location li span{
+    color: var(--muted);   
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.location li p{
+    font-size: 15px;
+    color: var(--ink);
 }
 .location li p a{
     color: var(--ink);
@@ -468,7 +538,14 @@ gap: 20px;
 .location li p a:hover{
     color: var(--orange);
 }
+.map{
+    border-radius: 10px;
+margin-top:15px ;
+overflow: hidden;
+border: 1px solid var(--muted);
+} 
 form div{
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -476,6 +553,9 @@ form label{
     padding: 10px 0;
     width: 100%;
     font-weight: 500;
+    color: var(--navy);
+    font-size: 14px
+
 }
 form input,
 form select,
@@ -489,7 +569,8 @@ form textarea{
 form button{
     margin: 15px 0;
     color: #fff;
-    font-size: calc(12px + .3vw);
+    font-size: calc(12px + .5vw);
+    font-weight: 600;
 
 }
 form input:focus,
@@ -500,7 +581,7 @@ form textarea:focus{
 }
 .query p{
     color: var(--muted);
-    font-size: calc(12px + .2vw);
+    font-size: 14px;
 }
 
 
@@ -511,28 +592,30 @@ form textarea:focus{
 /* footer----------------------------------------------- */
 
 footer{
-    background-color: var(--bg-soft);
+    background-color: var(--bg);
     border-top: 1px solid var(--line);
-     padding-top: 25px;
-    padding-bottom:25px;
 
 }
 .footerColGrid{
 display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 25px;
     padding-bottom:25px ;
-    gap: 20px;
-    
+    gap: 20px;    
+}
+.footerCol p{
+    font-family: var(--font);
+    color: var(--muted);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+
 }
 .footerCol p:first-child{
     font-weight: 600;
     text-transform: uppercase;
-    font-family: var(--font-head);
-    margin-bottom: 20px;
+    color: var(--navy);
 }
 .footerCol p a{
-    line-height: 1.8;
     color: var(--navy);
 }
 .footerCol p a:hover{
@@ -543,4 +626,7 @@ cursor: pointer;
 }
 .copyright{
     border-top: 1px solid var(--line);
+    padding-top: 15px;
+    font-size: 14px;
+    color: var(--muted);
 }

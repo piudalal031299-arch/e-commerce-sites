@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="container header">
+    <header class=" header">
         <h1>
             <div class="logo "><img src="image/logo.jpg" alt=""></div>
             <div class="companyName">
@@ -19,7 +19,7 @@
             </div>
         </h1>
         <div class="headerRight">
-            <nav class="nav ">
+            <nav class="nav">
                 <ul class="">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <button class="callBtn">
-                <a href="tel:9865747598">Call <span>9865747598</span>
+                <a href="tel:98311 05471">Call <span>98311 05471</span>
                 </a>
             </button>
             <div class="mobileMenu">
@@ -49,99 +49,121 @@
         </div>
     </header>
     <main>
-        <div class="cmnHeading container">
-            <p class="pageName">Home/Contact</p>
-            <h2>Get in touch</h2>
-            <p>Call directly for urgent breakdowns, or send the details below and we'll get back to you about a repair,
-                an AMC, or a plant visit.</p>
-        </div>
-        <section class="contactSec container">
+        <section class="contactSec">
+            <div class="cmnHeading">
+                <div class="container">
+                    <p class="pageName">Home/Contact</p>
+                    <h2>Get in touch</h2>
+                    <p>Call directly for urgent breakdowns, or send the details below and we'll get back to you about a
+                        repair,
+                        an AMC, or a plant visit.</p>
+                </div>
+            </div>
+
             <div class="contactDels">
-                <div class="location">
-                    <h5 class="orange">DIRECT LINES</h5>
-                    <li>CONTACT <p>Koushik Ghosh (Proprietor)</p></li>
-                    <li>MOBILE <p><a href="tel:98311 05471">98311 05471</a></p></li>
-                    <li>OFFICE <p><a href="tel:(033) 6414 7199">(033) 6414 7199</a></p></li>
-                    <li>EMAIL <p>
-                        <a href="mailto:maya_enterprise2007@yahoo.co.in">maya_enterprise2007@yahoo.co.in</a>
-                        </p>
-                    </li>
-                    <li>ADDRESS <p>E/61A, Baghajatin, <br> Kolkata – 700086, West Bengal</p></li>
-                    <li>MSME <p>WB10D0029670 · Est. 01/04/2004</p></li>
-                    <div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.5653310906423!2d88.37084597405642!3d22.48296293625197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02711066774a25%3A0x9cebd82af2c5d94d!2s61A%2C%20Baghajatin%20Colony%2C%20Kolkata%2C%20West%20Bengal%20700092!5e0!3m2!1sen!2sin!4v1786462333957!5m2!1sen!2sin"
-                            width="100%" height="300px" style="border:1px solid #ccc;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="container">
+                    <div class="contactGrid">
+                        <div class="location">
+                            <h5 class="orange">DIRECT LINES</h5>
+                            <li>
+                                <span>CONTACT</span>
+                                <p>Koushik Ghosh (Proprietor)</p>
+                            </li>
+                            <li>
+                                <span>MOBILE</span>
+                                <p><a href="tel:98311 05471">98311 05471</a></p>
+                            </li>
+                            <li>
+                                <span>OFFICE </span>
+                                <p><a href="tel:(033) 6414 7199">(033) 6414 7199</a></p>
+                            </li>
+                            <li>
+                                <span>EMAIL</span>
+                                <p><a href="mailto:maya_enterprise2007@yahoo.co.in">maya_enterprise2007@yahoo.co.in</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span>ADDRESS</span>
+                                <p>E/61A, Baghajatin, <br> Kolkata – 700086, West Bengal</p>
+                            </li>
+                            <li>
+                                <span>MSME</span>
+                                <p>WB10D0029670 · Est. 01/04/2004</p>
+                            </li>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4002.851020738281!2d88.3798517103251!3d22.48290609384881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027112e0d4b279%3A0x924be0fbba74d31b!2sBaghajatin%20Station%20Rd%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1786716052930!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+                        <div class="query">
+                            <h5 class="orange">SEND AN ENQUERY</h5>
+                            <form action="post">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel">
+                                </div>
+                                <div>
+                                    <label for="Equipment / make">Equipment / make</label>
+                                    <select name="Equipment / make" id="">
+                                        <option value="">VFD-ABB</option>
+                                        <option value="">Electronic Control Card</option>
+                                        <option value="">HIM/Plant System</option>
+                                        <option value="">Parts Supply</option>
+                                        <option value="">Others</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="description">Describe the fault or requirement</label>
+                                    <textarea name="" id=""></textarea>
+                                </div>
+                                <button type="submit" class="primBtn">Send enquiry</button>
+                            </form>
+                            <p>This opens your email app addressed to maya_enterprise2007@yahoo.co.in with these details
+                                filled in.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="query">
-                    <h5 class="orange">SEND AN ENQUERY</h5>
-                    <form action="post">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel">
-                        </div>
-                        <div>
-                            <label for="Equipment / make">Equipment / make</label>
-                            <select name="Equipment / make" id="">
-                                <option value="">VFD-ABB</option>
-                                <option value="">Electronic Control Card</option>
-                                <option value="">HIM/Plant System</option>
-                                <option value="">Parts Supply</option>
-                                <option value="">Others</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="description">Describe the fault or requirement</label>
-                            <textarea name="" id=""></textarea>
-                        </div>
-                        <button type="submit" class="primBtn">Send enquiry</button>
-                    </form>
-                    <p>This opens your email app addressed to maya_enterprise2007@yahoo.co.in with these details filled in.</p>
-                </div>
             </div>
-
         </section>
     </main>
-    <footer class=" ">
-        <div class="footerColGrid container">
-            <div class="footerCol">
-                <p>Maya Enterprise</p>
-                <p>Industrial electronics repair & supply for process industries — Baghajatin, Kolkata. MSME
-                    WB10D0029670.</p>
+    <footer>
+        <div class="container">
+            <div class="footerColGrid">
+                <div class="footerCol">
+                    <p>Maya Enterprise</p>
+                    <p>Industrial electronics repair & supply for process industries — Baghajatin, Kolkata. MSME
+                        WB10D0029670.</p>
+                </div>
+                <div class="footerCol">
+                    <p>Navigate</p>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="workshop.html">Workshop</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footerCol">
+                    <p>Contact</p>
+                    <p><a href="tel:9831105471">Mobile: 98311 05471</a>
+                    <p>
+                    <p><a href="tel:(033) 6414 7199">Office: (033) 6414 7199</a></p>
+                    <p><a href="mailto:maya_enterprise2007@yahoo.co.in">maya_enterprise2007@yahoo.co.in</a></p>
+                </div>
+                <div class="footerCol">
+                    <p>Workshop</p>
+                    <p>E/61A, Baghajatin,
+                        <br> Kolkata – 700086
+                    </p>
+                </div>
             </div>
-            <div class="footerCol">
-                <p>Navigate</p>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="services.html">Services</a></p>
-                <p><a href="workshop.html">Workshop</a></p>
-                <p><a href="contact.html">Contact</a></p>
+            <div class="copyright flex">
+                <p>© 2026 Maya Enterprise, Kolkata</p>
+                <p>Prop: Koushik Ghosh</p>
             </div>
-            <div class="footerCol">
-                <p>Contact</p>
-                <p><a href="tel:9831105471">Mobile: 98311 05471</a>
-                <p>
-                <p><a href="tel:(033) 6414 7199">Office: (033) 6414 7199</a></p>
-                <p><a href="mailto:maya_enterprise2007@yahoo.co.in">maya_enterprise2007@yahoo.co.in</a></p>
-            </div>
-            <div class="footerCol">
-                <p>Workshop</p>
-                <p>E/61A, Baghajatin,
-                    <br> Kolkata – 700086
-                </p>
-            </div>
-        </div>
-        <div class="copyright container flex">
-            <p>© 2026 Maya Enterprise, Kolkata</p>
-            <p>Prop: Koushik Ghosh</p>
-        </div>
 
-
+        </div>
     </footer>
     <script src="script.js"></script>
 

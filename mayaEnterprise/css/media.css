@@ -1,8 +1,14 @@
 @media  (max-width:992px){
-    .hero{
+    .heroGrid{
     display: flex;
     flex-direction: column-reverse;
 
+}
+.trustedCards{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.whatWeDoCards{
+    grid-template-columns:  1fr;
 }
 .counterCont{
     grid-template-columns: auto;
@@ -14,15 +20,13 @@
     display: flex;
     justify-content: left;
     padding-top: 20px;
-    gap: 5px;
+    gap: 15px;
+    text-align: center;
     font-size: 10px;
 }
    
 }
 @media (max-width:768px){
-   .container{
-    padding:  25px calc(25px + 1vw);
-}
     .nav ul{
     display: none;
    }
@@ -33,11 +37,20 @@
     grid-template-columns: auto;
 
 }
-.contactDels{
+.flex{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.flex button{
+    width: 100%;
+}
+#coreRepair{
     grid-template-columns: auto;
 }
-
-
+.contactGrid{
+    grid-template-columns: 1fr;
+}
 .footerColGrid{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
@@ -45,6 +58,9 @@
 }
 }
 @media (max-width:576px){
+    .companyName p{
+        display: none;
+    }
     .callBtn{
         width: auto;
     }
@@ -56,15 +72,34 @@
     grid-template-columns: auto;
     row-gap: 10px;
 }
-#coreRepair{
-    grid-template-columns: auto;
+.heroBtn,
+.btnFlex{
+flex-direction: column;
+}
+.heroCard{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroCard p{
+    margin-bottom: 0;
+}
+.trustedCards{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .whoWeServeCards{
     grid-template-columns: auto;
 }
+.location li{
+    padding: 12px 0;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+form button{
+width: 100%;
+}
 .footerColGrid{
-    grid-template-columns: 1fr;
-    text-align: center;
-    
+    grid-template-columns: 1fr;    
 }
 }
