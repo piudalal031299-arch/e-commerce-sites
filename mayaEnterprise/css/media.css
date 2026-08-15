@@ -37,6 +37,9 @@
     grid-template-columns: auto;
 
 }
+.trustedCards .card img{
+     filter: grayscale(0%);
+}
 .flex{
     display: grid;
     grid-template-columns: 1fr;

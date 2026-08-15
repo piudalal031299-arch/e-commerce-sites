@@ -44,6 +44,10 @@ p{
 font-size: 14px; 
 
 }
+button:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
 .container{
    padding:  clamp(20px, 4vw, 48px);
     max-width: 1300px;
@@ -60,8 +64,8 @@ font-weight: 600px;
 }
 .primBtn a{
     color: #fff;
-     font-size: 15px;
-font-weight: 600px;
+    font-size: 15px;
+    font-weight: 600px;
 }
 
 .secBtn{
@@ -69,9 +73,12 @@ font-weight: 600px;
     border: 1px solid var(--line-dark);
     border-radius: 8px;
     background-color: transparent; 
-     font-size: 15px;
-font-weight: 600px;
+    font-size: 15px;
+    font-weight: 600px;
 
+}
+.btnFlex .secBtn a{
+    color: #fff;
 }
 button a{
     color: var(--navy);
@@ -105,7 +112,7 @@ h1{
     gap:4px;
 }
 .companyName div {
-font-size: calc(12px + .5vw);
+font-size: calc(10px + .5vw);
 }
 .companyName p{
 font-size: calc(8px + .3vw);
@@ -130,13 +137,20 @@ display: flex;
 gap:20px;
 }
 .nav ul li a{
-    color: var(--ink);
+    color: var(--navy);
     font-weight: 500;
-    font-size: calc(10px + .5vw);
+    font-size: calc(14px + .1vw);
 }
-.nav ul li a:hover,
-.nav ul li a:active{
-    border-bottom:2px solid var(--orange);
+.nav ul li a:hover{
+   color: var(--ink);
+    font-weight: 700;
+    padding-bottom: 12px;
+    cursor: pointer; 
+}
+.nav ul li a.active{
+    border-bottom:2px solid var(--orange-dk);
+    color: var(--ink);
+    font-weight: 700;
     padding-bottom: 12px;
     cursor: pointer;
 
@@ -153,10 +167,9 @@ gap:20px;
 }
  .mobileMenu{
     display: none;
-    /* position: relative; */
 }
 .hamburger{
-    padding:3px 5px;
+    padding:2px 4px;
     background-color: #fff;
     border: 1px solid var(--navy);
     border-radius: 4px;
@@ -168,16 +181,17 @@ display: none;
 position: absolute;
 background-color: #fff;
 font-weight: 500;
-top: 85px;
+top: 75px;
 left: 0;
 }
 #mobileNav.show{
 display: block;
 }
-#mobileNav ul li:hover{
-    background-color: var(--accent-2);
-border-radius: 2px;
-cursor: pointer;
+#mobileNav ul li:hover,
+#mobileNav ul li.active{
+    background-color: var(--orange);
+    border-radius: 2px;
+    cursor: pointer;
     transition: all.3s ease-in-out;
 
 
