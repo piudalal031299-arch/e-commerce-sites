@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="featureDiv">
+    <img src="./images/Frame 71.png" alt="call icon">
+    <img src="./images/Group 80.png" alt="whatsapp icon">
+  </div>
+  <header class="headerContainer">
+    <div class="logo-container">
+      <img src="./images/logoImg.png" alt="aim movies logo image">
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li class="dropdownMenu"><a href="Services.html">Services
+          </a>
+          <img src="./images/dropDownIcon.png" alt="this is dropdown Icon image" class="dropdownIcon"
+            onclick="toggleDropDown()">
+          <ul id="dropdownUl" class="dropdown-Ul">
+            <li><a href="ServiceSubPage.html">Kiosk</a></li>
+            <li><a href="ServiceSubPage.html">Standee</a></li>
+            <li><a href="ServiceSubPage.html">Selfie Corner</a></li>
+            <li><a href="ServiceSubPage.html">Wall Branding</a></li>
+            <li><a href="ServiceSubPage.html">On Screen Ads</a></li>
+            <li><a href="ServiceSubPage.html">Coupon Distribution</a></li>
+          </ul>
+        </li>
+        <li><a href="Contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="btn-quote">Get Quote</button>
+      <div id="hamburgerIcon" class="hamburgerIconWrapper">
+        <span class="material-symbols-outlined hamburgerIcon">
+          menu
+        </span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="heroImgContainer">
+        <img src="./images/ContactHeroImg.png" alt="this is hero image" class="heroImg">
+        <img src="./images/heroImgShadowImg.png" alt="this is hero shadow image" class="heroShadowImg">
+        <div class="heroTextDiv">
+          <h1 class="contactHeroTitle">Get In <span>Touch</span></h1>
+          <p class="hero-subtitle">
+            Ready to launch your campaign? Our experts are here to help you design the perfect cinema advertising
+            strategy.
+          </p>
+        </div>
+    </section>
+    <section class="contactDetailsDiv">
+
+      <div class="contactDetailsWrap">
+        <div class="contactDetailsIconDiv">
+          <img src="./images/Vector (5).png" alt="call icon" class="contactIcon1">
+        </div>
+        <div class="contactDetailsIconText">
+          <h4>Phone</h4>
+          <p>+91 1234567890</p>
+        </div>
+      </div>
+
+      <div class="contactDetailsWrap">
+        <div class="contactDetailsIconDiv">
+          <img src="./images/Vector (6).png" alt="call icon" class="contactIcon1">
+        </div>
+        <div class="contactDetailsIconText">
+          <h4>Mail</h4>
+          <p>www.adsinmovies.com</p>
+        </div>
+      </div>
+       
+      <div class="contactDetailsWrap">
+        <div class="contactDetailsIconDiv">
+          <img src="./images/Vector (4).png" alt="call icon" class="contactIcon1">
+        </div>
+        <div class="contactDetailsIconText">
+          <h4>Location</h4>
+          <p>123 J.C Road, Mumbai</p>
+        </div>
+      </div>
+    </section>
+    <section class="contactFormDiv">
+      <form class="contactForm">
+        <div class="contactFormField1">
+          <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+            <label for="name" class="formLabels">Full Name</label>
+            <input type="text" name="" class="formInput" placeholder="Rahul shaw">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+            <label for="email" class="formLabels">Email Address</label>
+            <input type="email" name="" class="formInput" placeholder="www.mymail123@gmail.com">
+          </div>
+        </div>
+        <div class="contactFormField1">
+          <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+            <label for="number" class="formLabels">Phone Number</label>
+            <input type="number" name="" class="formInput" placeholder="+91">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+            <label for="text" class="formLabels">Service Interested In</label>
+            <input type="text" name="" class="formInput" placeholder="Onscreen Ads">
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+          <label for="text" class="formLabels">Phone Numner</label>
+          <textarea style=" resize: none;" class="formTextArea">Type here...</textarea>
+        </div>
+      </form>
+    </section>
+    <button class="contactBtn">
+      <img src="./images/Vector (8).png" alt="serviceIcon" class="serviceIcon">
+      Send Message</button>
+    <div class="mapImgDiv">
+      <img src="./images/mapImg.jpg" alt="map image" class="mapImg">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footerWrapper">
+      <div class="footer-col">
+        <img src="./images/logoImg.png" alt="">
+        <p>India's leading cinema advertising network. We help brands connect with engaged audiences through high-impact
+          big screen visuals and interactive lobby branding.</p>
+        <div class="socialMediaIconWrap">
+          <div class="socialMediaIconDiv">
+            <img src="./images/Frame 163.png" alt="social media icon" class="socialMediaIconImg">
+          </div>
+          <div class="socialMediaIconDiv">
+            <img src="./images/Group.png" alt="social media icon" class="socialMediaIconImg">
+          </div>
+          <div class="socialMediaIconDiv">
+            <img src="./images/mdi_instagram.png" alt="social media icon" class="socialMediaIconImg">
+          </div>
+          <div class="socialMediaIconDiv">
+            <img src="./images/Vector (7).png" alt="social media icon" class="socialMediaIconImg">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Latest Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">On Screen Ads</a></li>
+          <li><a href="#">Selfie Corner</a></li>
+          <li><a href="#">Wall Branding</a></li>
+          <li><a href="#">Standee & Kiosk</a></li>
+          <li><a href="#">Coupon Distribution</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li><img src="./images/Vector (4).png" alt="call icon" class="footerIcon">123, Cinema Plaza, Film City, Mumbai
+            - 400001</li>
+          <li><img src="./images/Vector (5).png" alt="call icon" class="footerIcon">1234567890</li>
+          <li><img src="./images/Vector (6).png" alt="call icon" class="footerIcon">info@cineads.in</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 CineAds Advertising Pvt Ltd. All rights reserved.</div>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Services</a>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
